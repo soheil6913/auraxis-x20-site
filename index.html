@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURAXIS-X20 | آینده فناوری سینمایی</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Vazirmatn -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#ffd700',
+                            500: '#d4af37',
+                            600: '#aa8c2c',
+                            DEFAULT: '#d4af37'
+                        },
+                        darkBg: '#050505'
+                    },
+                    fontFamily: {
+                        sans: ['Vazirmatn', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fff 0%, #ffd700 50%, #aa8c2c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #ffd700 0%, #d4af37 50%, #8a701f 100%);
+        }
+        .glass-card {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .glow-effect {
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.15);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="selection:bg-gold selection:text-black">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 glass-card border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <div class="w-10 h-10 rounded-xl gold-gradient-bg flex items-center justify-center font-black text-black text-xl shadow-lg">
+                    X
+                </div>
+                <span class="text-2xl font-black tracking-wider gold-gradient-text">AURAXIS-X20</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 space-x-reverse text-sm font-medium text-gray-300">
+                <a href="#features" class="hover:text-gold transition">قابلیت‌ها</a>
+                <a href="#cinematic" class="hover:text-gold transition">تجربه سینمایی</a>
+                <a href="#specs" class="hover:text-gold transition">مشخصات فنی</a>
+            </nav>
+            <div>
+                <a href="#download" class="px-6 py-2.5 rounded-full gold-gradient-bg text-black font-bold text-sm tracking-wide shadow-lg hover:opacity-90 transition transform hover:scale-105">
+                    دریافت اپلیکیشن
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Background Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold/10 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7 text-right">
+                <div class="inline-flex items-center space-x-2 space-x-reverse px-4 py-2 rounded-full glass-card text-gold text-xs font-semibold mb-6">
+                    <span class="w-2 h-2 rounded-full bg-gold animate-ping"></span>
+                    <span>نسخه نسل جدید معرفی شد</span>
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-black tracking-tight leading-tight mb-6">
+                    شکوه تکنولوژی در <br><span class="gold-gradient-text">ابعادی سینمایی</span>
+                </h1>
+                <p class="text-gray-400 text-lg lg:text-xl font-light leading-relaxed mb-8 max-w-2xl">
+                    اپلیکیشن **AURAXIS-X20** تجربه‌ای فراتر از تصور؛ تلفیقی خیره‌کننده از پویایی متریال طلا، پردازش هوشمند و گرافیک چندبعدی پیشرفته برای حرفه‌ای‌ها[span_1](start_span)[span_1](end_span).
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#download" class="px-8 py-4 rounded-full gold-gradient-bg text-black font-extrabold text-base shadow-xl hover:opacity-90 transition transform hover:-translate-y-1">
+                        شروع تجربه X20
+                    </a>
+                    <a href="#features" class="px-8 py-4 rounded-full glass-card text-white font-semibold text-base hover:border-gold transition">
+                        تماشای قابلیت‌ها
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Visual Representation (Golden X Theme) -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-72 h-72 lg:w-96 lg:h-96 flex items-center justify-center">
+                    <div class="absolute inset-0 rounded-full border border-gold/30 animate-spin" style="animation-duration: 20s;"></div>
+                    <div class="absolute inset-4 rounded-full border border-dashed border-gold/20 animate-spin" style="animation-duration: 15s; animation-direction: reverse;"></div>
+                    <div class="w-48 h-48 lg:w-64 lg:h-64 rounded-3xl glass-card glow-effect flex items-center justify-center transform rotate-12 hover:rotate-0 transition duration-700">
+                        <span class="text-8xl lg:text-9xl font-black gold-gradient-text drop-shadow-2xl">X</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-28 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-3xl lg:text-5xl font-extrabold mb-6">مهندسی شده برای <span class="gold-gradient-text">برتری مطلق</span></h2>
+                <p class="text-gray-400 text-base lg:text-lg">ویژگی‌های انحصاری AURAXIS-X20 که مرزهای کیفیت و سرعت را جابجا می‌کند.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-card p-8 rounded-3xl hover:border-gold transition group">
+                    <div class="w-14 h-14 rounded-2xl gold-gradient-bg flex items-center justify-center text-black text-2xl font-bold mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">رابط کاربری چندبعدی</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">طراحی سیال و عمیق الهام‌گرفته از حرکت مایعات متالیک با بالاترین نرخ فریم و روانی کامل.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="glass-card p-8 rounded-3xl hover:border-gold transition group">
+                    <div class="w-14 h-14 rounded-2xl gold-gradient-bg flex items-center justify-center text-black text-2xl font-bold mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">پردازش کوانتومی سرعت</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">اجرای همزمان سنگین‌ترین عملیات پردازشی بدون کوچک‌ترین افت کیفیت یا تاخیر.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="glass-card p-8 rounded-3xl hover:border-gold transition group">
+                    <div class="w-14 h-14 rounded-2xl gold-gradient-bg flex items-center justify-center text-black text-2xl font-bold mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">امنیت لایه حفاظتی طلا</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">رمزنگاری چندلایه پیشرفته برای حفظ حریم خصوصی و اطلاعات حیاتی کاربران سطح سازمانی.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cinematic Experience Banner -->
+    <section id="cinematic" class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="glass-card rounded-3xl p-10 lg:p-16 relative overflow-hidden border border-gold/40 text-center">
+                <div class="absolute -right-20 -top-20 w-96 h-96 bg-gold/10 rounded-full blur-3xl"></div>
+                <div class="relative z-10 max-w-3xl mx-auto">
+                    <h2 class="text-3xl lg:text-5xl font-black mb-6">غوطه‌وری کامل در دنیای <span class="gold-gradient-text">X20</span></h2>
+                    <p class="text-gray-300 text-lg mb-8">ساختار بصری این اپلیکیشن با الهام از خلق المان‌های طلایی در تاریکی مطلق شکل گرفته است تا حس لوکس بودن را در هر ثانیه لمس کنید[span_2](start_span)[span_2](end_span).</p>
+                    <a href="#download" class="inline-block px-8 py-4 rounded-full gold-gradient-bg text-black font-extrabold shadow-lg hover:opacity-90 transition">
+                        همین حالا نسخه آزمایشی را دریافت کنید
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-28 relative text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl lg:text-6xl font-black mb-6">آماده ورود به آینده هستید؟</h2>
+            <p class="text-gray-400 text-lg mb-12">AURAXIS-X20 هم‌اکنون برای پلتفرم‌های اصلی آماده دانلود است.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <button class="flex items-center space-x-4 space-x-reverse px-8 py-4 rounded-2xl glass-card hover:border-gold transition group">
+                    <i class="fa-brands fa-apple text-3xl group-hover:text-gold transition"></i>
+                    <div class="text-right">
+                        <div class="text-xs text-gray-400">دانلود نسخه</div>
+                        <div class="text-lg font-bold">iOS / macOS</div>
+                    </div>
+                </button>
+                <button class="flex items-center space-x-4 space-x-reverse px-8 py-4 rounded-2xl glass-card hover:border-gold transition group">
+                    <i class="fa-brands fa-google-play text-3xl group-hover:text-gold transition"></i>
+                    <div class="text-right">
+                        <div class="text-xs text-gray-400">دانلود نسخه</div>
+                        <div class="text-lg font-bold">Android / Windows</div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-12 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 AURAXIS-X20. تمامی حقوق محفوظ است.</p>
+    </footer>
+
+</body>
+</html>
